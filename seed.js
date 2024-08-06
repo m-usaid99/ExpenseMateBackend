@@ -79,7 +79,7 @@ const seedDB = async () => {
 
   await user.save();
 
-  const expenses = Array.from({ length: 15 }).map(() => ({
+  const expenses = Array.from({ length: 20 }).map(() => ({
     date: getRandomDate(),
     category: getRandomCategory('expense'),
     amount: Math.floor(Math.random() * 500) + 1,
@@ -87,7 +87,7 @@ const seedDB = async () => {
     notes: 'Seeded expense',
   }));
 
-  const incomes = Array.from({ length: 9 }).map(() => ({
+  const incomes = Array.from({ length: 15 }).map(() => ({
     date: getRandomDate(),
     category: getRandomCategory('income'),
     amount: Math.floor(Math.random() * 3000) + 1000,
