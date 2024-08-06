@@ -98,6 +98,9 @@
     "test": "jest",
     "start": "node server.js"
   },
+  "engines": {
+    "node": ">16.20.1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
